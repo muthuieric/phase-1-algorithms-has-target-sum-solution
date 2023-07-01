@@ -1,6 +1,15 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  const seenNumbers = {};
+  for (const number of array){
+    const complement = target - number;
+    if (complement in seenNumbers)
+
+  }
+return false;
+
 }
+
 
 /* 
   Write the Big O time complexity of your function here
@@ -32,3 +41,6 @@ if (require.main === module) {
 }
 
 module.exports = hasTargetSum;
+
+
+  
